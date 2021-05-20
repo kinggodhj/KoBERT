@@ -6,6 +6,7 @@ from tokenizers import Tokenizer
 from tokenizers.processors import BertProcessing
 from tokenizers.models import BPE
 import pdb
+import torch
 
 class LineByLineTextDataset(Dataset):
     def __init__(self, tokenizer, file_path):
